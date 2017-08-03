@@ -1,0 +1,113 @@
+@mixin flexCenter
+  display: -webkit-flex
+  justify-content: center
+  align-items: center
+
+@mixin paddingLR($left,$right)
+  padding-left: $left
+  padding-right: $right
+  box-sizing: border-box
+
+body
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 100%
+  font-size: .12rem
+  display: -webkit-flex
+  -webkit-flex-direction: column
+
+header
+  height: .5rem
+  background-color: #393a3e
+  color: #fff
+  font-size: .16rem
+  @include paddingLR(.6rem,.2rem)
+  position: relative
+  z-index: 7
+  span
+    position: absolute
+    top: .15rem
+    &:first-child
+      left: .2rem
+      padding-right: .13rem
+      box-sizing: border-box
+      border-right: .01rem solid #2f3034
+    &:last-child
+      right: .2rem
+
+main
+  -webkit-flex: 1
+  overflow-y: scroll
+
+.mark
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  background-color: #000
+  opacity: .5
+  z-index: 88
+
+.dialog
+  width: 3rem
+  height: 3.6rem
+  background-color: #fff
+  border-radius: .06rem
+  position: absolute
+  top: 0
+  left: 0 
+  bottom: 0
+  right: 0
+  margin: auto
+  z-index: 999
+  .title
+    height: 1.4rem
+    text-align: center
+    color: #4b4f52
+    font-size: .16rem
+    p
+      &:first-child
+        padding-top: .3rem
+        padding-bottom: .1rem
+        @include paddingLR(1rem,1rem)
+        img
+          width: 100%
+          height: 100%
+  & > p
+    @include paddingLR(.28rem,.28rem)
+    position: relative
+    input
+      height: .5rem
+      width: 100%
+      border-width: 0
+      border-bottom: .01rem solid #848887
+      padding-left: .5rem
+      box-sizing: border-box
+      &::-webkit-input-placeholder
+        color: #b2b2b2
+    span
+      width: .3rem
+      height: .34rem
+      position: absolute
+      top: .1rem
+      left: .4rem
+      img
+        width: 100%
+        height: 100%
+
+  button
+    width: 84%
+    height: .38rem
+    display: block
+    line-height: .38rem
+    margin: .4rem auto 0
+    background-color: #2fba77
+    text-align: center
+    color: #fff
+    border: none
+    border-radius: .04rem
+
+    
+

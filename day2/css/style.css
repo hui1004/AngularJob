@@ -1,0 +1,106 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.12rem;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+header {
+  height: 0.5rem;
+  background-color: #393a3e;
+  color: #fff;
+  font-size: 0.16rem;
+  padding-left: 0.6rem;
+  padding-right: 0.2rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 7; }
+  header span {
+    position: absolute;
+    top: 0.15rem; }
+    header span:first-child {
+      left: 0.2rem;
+      padding-right: 0.13rem;
+      box-sizing: border-box;
+      border-right: 0.01rem solid #2f3034; }
+    header span:last-child {
+      right: 0.2rem; }
+
+main {
+  -webkit-flex: 1;
+  overflow-y: scroll; }
+
+.mark {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 88; }
+
+.dialog {
+  width: 3rem;
+  height: 3.6rem;
+  background-color: #fff;
+  border-radius: 0.06rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 999; }
+  .dialog .title {
+    height: 1.4rem;
+    text-align: center;
+    color: #4b4f52;
+    font-size: 0.16rem; }
+    .dialog .title p:first-child {
+      padding-top: 0.3rem;
+      padding-bottom: 0.1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      box-sizing: border-box; }
+      .dialog .title p:first-child img {
+        width: 100%;
+        height: 100%; }
+  .dialog > p {
+    padding-left: 0.28rem;
+    padding-right: 0.28rem;
+    box-sizing: border-box;
+    position: relative; }
+    .dialog > p input {
+      height: 0.5rem;
+      width: 100%;
+      border-width: 0;
+      border-bottom: 0.01rem solid #848887;
+      padding-left: 0.5rem;
+      box-sizing: border-box; }
+      .dialog > p input::-webkit-input-placeholder {
+        color: #b2b2b2; }
+    .dialog > p span {
+      width: 0.3rem;
+      height: 0.34rem;
+      position: absolute;
+      top: 0.1rem;
+      left: 0.4rem; }
+      .dialog > p span img {
+        width: 100%;
+        height: 100%; }
+  .dialog button {
+    width: 84%;
+    height: 0.38rem;
+    display: block;
+    line-height: 0.38rem;
+    margin: 0.4rem auto 0;
+    background-color: #2fba77;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 0.04rem; }
+
+/*# sourceMappingURL=style.css.map */
