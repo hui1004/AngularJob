@@ -1,0 +1,27 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.12rem;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  background-color: #f0f0fe; }
+
+.nav ul {
+  display: -webkit-flex;
+  background-color: #fff; }
+  .nav ul li {
+    width: 33.3%;
+    height: 0.5rem;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center; }
+    .nav ul li a {
+      line-height: 0.5rem;
+      color: #d9d9d9; }
+    .nav ul li.active a {
+      color: #617ef6;
+      border-bottom: 0.01rem solid #617ef6; }
+
+/*# sourceMappingURL=style.css.map */
