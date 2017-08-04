@@ -24,4 +24,57 @@ body {
       color: #617ef6;
       border-bottom: 0.01rem solid #617ef6; }
 
+.details {
+  -webkit-flex: 1;
+  overflow-y: scroll;
+  margin-top: 0.1rem;
+  background-color: #fff;
+  padding-left: 0.24rem;
+  padding-right: 0.24rem;
+  box-sizing: border-box; }
+  .details .item {
+    margin-top: 0.14rem;
+    border-radius: 0.05rem;
+    box-shadow: 0.02rem 0.02rem 0.02rem #ccc; }
+    .details .item:nth-child(2) .item-top {
+      background-color: #5686f4; }
+    .details .item:nth-child(3) .item-top {
+      background-color: #965df5; }
+    .details .item:nth-child(4) .item-top {
+      background-color: #4bc670; }
+    .details .item .item-top {
+      height: 0.66rem;
+      background-color: #fd6060;
+      color: #fff;
+      border-top-left-radius: 0.05rem;
+      border-top-right-radius: 0.05rem;
+      position: relative; }
+      .details .item .item-top span {
+        position: absolute; }
+        .details .item .item-top span:first-child {
+          font-size: 0.24rem;
+          left: 5%;
+          top: 0.1rem; }
+        .details .item .item-top span:nth-child(2) {
+          font-size: 0.42rem;
+          left: 15%;
+          top: 0.1rem; }
+        .details .item .item-top span:last-child {
+          font-size: 0.26rem;
+          bottom: 0.12rem;
+          right: 5%; }
+    .details .item .item-bottom {
+      background-color: #fff;
+      padding-left: 0.24rem;
+      padding-right: 0.24rem;
+      box-sizing: border-box;
+      border-bottom-left-radius: 0.05rem;
+      border-bottom-right-radius: 0.05rem; }
+      .details .item .item-bottom p {
+        line-height: 0.24rem; }
+        .details .item .item-bottom p:first-child {
+          color: #00a856; }
+        .details .item .item-bottom p:last-child {
+          color: #aaaaaa; }
+
 /*# sourceMappingURL=style.css.map */

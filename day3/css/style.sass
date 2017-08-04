@@ -34,5 +34,56 @@ body
           color: #617ef6
           border-bottom: .01rem solid #617ef6
 
+.details
+  -webkit-flex: 1
+  overflow-y: scroll
+  margin-top: .1rem
+  background-color: #fff
+  @include paddingLR(.24rem,.24rem)
+  .item
+    margin-top: .14rem
+    border-radius: .05rem
+    box-shadow: .02rem .02rem .02rem #ccc
+    &:nth-child(2)
+      .item-top
+        background-color: #5686f4
+    &:nth-child(3)
+      .item-top
+        background-color: #965df5
+    &:nth-child(4)
+      .item-top
+        background-color: #4bc670
+    .item-top
+      height: .66rem
+      background-color: #fd6060
+      color: #fff
+      border-top-left-radius: .05rem
+      border-top-right-radius: .05rem
+      position: relative
+      span
+        position: absolute
+        &:first-child
+          font-size: .24rem
+          left: 5%
+          top: .1rem
+        &:nth-child(2)
+          font-size: .42rem
+          left: 15%
+          top: .1rem
+        &:last-child
+          font-size: .26rem
+          bottom: .12rem
+          right: 5%
+    .item-bottom
+      background-color: #fff
+      @include paddingLR(.24rem,.24rem)
+      border-bottom-left-radius: .05rem
+      border-bottom-right-radius: .05rem
+      p
+        line-height: .24rem
+        &:first-child
+          color: #00a856
+        &:last-child
+          color: #aaaaaa
 
 
